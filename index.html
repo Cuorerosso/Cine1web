@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CINE1WEB4 - News Internazionali Professionali</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topnav">
+      <div class="brand">
+        <span class="brand__label">CINE1WEB4</span>
+        <p class="brand__subtitle">News internazionali, gossip e stile in tempo reale</p>
+      </div>
+      <nav class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#featured">Highlights</a>
+        <a href="#articles">Approfondimenti</a>
+        <a href="#media">Media</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero__content">
+        <div>
+          <p class="eyebrow">Ultime Notizie</p>
+          <h1>Una homepage professionale con aggiornamenti automatici</h1>
+          <p>Fonte contenuti live dal web: video, immagini e notizie internazionali selezionate per te.</p>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <strong id="refresh-count">0</strong>
+            <span>Aggiornamenti automatici</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Live updates</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__cards">
+        <article class="hero-card">
+          <span>Ultima ora</span>
+          <h2 id="headline-title">Caricamento notizie in corso...</h2>
+          <p id="headline-description">Il sistema si aggiorna automaticamente con contenuti pubblici e media online.</p>
+        </article>
+        <article class="hero-card hero-card--accent">
+          <span>Focus</span>
+          <h2 id="headline-topic">Tendenze, società e stile</h2>
+          <p>Scorri immagini e video in diretta, con un layout ispirato ai siti news internazionali.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-grid" id="featured">
+      <aside class="panel panel--sidebar">
+        <h2>Live feed</h2>
+        <ul class="summary-list" id="summary-list"></ul>
+      </aside>
+
+      <main class="panel panel--main">
+        <div class="panel__header">
+          <h2>Contenuti in evidenza</h2>
+          <button id="refresh-now" class="button">Ricarica subito</button>
+        </div>
+        <div class="media-widget" id="media-widget">
+          <iframe id="video-frame" src="https://www.youtube.com/embed/HW-00eF5AZY" title="Video news" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <section class="article-cards" id="articles"></section>
+      </main>
+    </section>
+
+    <section class="media-section" id="media">
+      <div class="section-header">
+        <h2>Foto e video dal web</h2>
+        <p>Immagini editoriali e clip pubbliche recuperate automaticamente da fonti online.</p>
+      </div>
+      <div class="media-grid" id="media-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 CINE1WEB4 — Sito statico professionale per hosting GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
